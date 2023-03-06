@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "regression": "npx playwright test",
+    "smokeTest": "npx playwright test SmokeTest.spec.js",
     "firefoxTests": "npx playwright test --grep @Reg --config=playwright.config1.js --project=firefox",
     "chromeTests": "npx playwright test --grep @Reg --config=playwright.config1.js --project=chrome",
     "safariTests": "npx playwright test --grep @Reg --config=playwright.config1.js --project=safari",
