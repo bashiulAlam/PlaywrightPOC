@@ -15,7 +15,7 @@ jobs:
       - run: npx playwright install chrome
       - run:
           name: Run test
-          command: PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml npx playwright test SmokeTest.spec.js --reporter=junit --project=chromium
+          command: npx playwright test SmokeTest.spec.js
       - store_test_results:
           path: results.xml
 
